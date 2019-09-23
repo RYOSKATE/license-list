@@ -1,6 +1,7 @@
 import commander from 'commander';
 import { exec } from 'child_process';
 import fs from 'fs';
+import { MIT, Apache2 } from './text';
 
 const getYear = () => {
   var dt    = new Date();
@@ -81,7 +82,10 @@ div.c2		{ padding-bottom: 24px; color: #888888; font-size: 9px; }
     <br>
     Copyright (c) ${year} ${author}
   </div>
-
+  <div class="c2">
+    ${license==='MIT' ? MIT.replace(/\r?\n/g, '<br>'):null}
+    ${license==='Apache-2.0' ? Apache2.replace(/\r?\n/g, '<br>'):null}
+  </div>
   ${licenses}
 </body>
 </html>`;
