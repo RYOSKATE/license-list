@@ -4,6 +4,9 @@
   "description": "generate license.html",
   "main": "lib/license-list.js",
   "typings": "lib/license-list.d.ts",
+  "bin": {
+    "cli": "lib/license-list.js"
+  },
   "private": false,
   "repository": {
     "type": "git",
