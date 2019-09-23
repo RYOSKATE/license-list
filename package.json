@@ -5,7 +5,7 @@
   "main": "lib/license-list-html.js",
   "typings": "lib/license-list-html.d.ts",
   "bin": {
-    "cli": "lib/license-list-html.js"
+    "license-list-html": "bin/license-list-html"
   },
   "private": false,
   "repository": {
